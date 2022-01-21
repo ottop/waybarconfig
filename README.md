@@ -7,4 +7,4 @@
 
 ## How to use
 
-Place both of the files inside the directory 
+Place both of the files inside the directory ~/.config/waybar  
