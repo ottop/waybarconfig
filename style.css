@@ -19,8 +19,6 @@ window#waybar {
 #disk,
 #taskbar,
 #taskbar button,
-#workspaces,
-#workspaces button,
 #temperature,
 .modules-center,
 .modules-right,
@@ -87,20 +85,6 @@ window#waybar {
 
 #taskbar button.active {
     background: #459987;
-}
-
-#workspaces button {
-    background-color: #457987;
-    border: 0px;
-    color: #052749;
-    margin: 3px;
-}
-
-#workspaces button.focused {
-    background-color: #459987;
-    border: 0px;
-    color: #052749;
-    margin: 3px;
 }
 
 .modules-left {
