@@ -1,0 +1,141 @@
+* {
+    font-family: helvetica;
+    font-weight: bold;
+}
+
+window#waybar {
+    background: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+    color: #c0c0c0;
+    transition-property: background-color;
+    transition-duration: .0s;
+}
+
+#clock,
+#cpu,
+#memory,
+#disk,
+#taskbar,
+#taskbar button,
+#workspaces,
+#workspaces button,
+#temperature,
+.modules-center,
+.modules-right,
+.modules-left
+{
+    padding: 0px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 20px;
+    margin-right: 2px;
+    margin-left: 2px;
+    margin: 0px;
+    font-size: 12px;
+    min-height: 12px;
+}
+
+#clock {
+    background-color: #457987;
+    color: #052749;
+    border: 0px solid #456787;
+    margin-left: 4px;
+    margin-right: 4px;
+    padding-right: 8px;
+    padding-left: 8px;
+    margin: 3px;
+}
+#clock.t1,
+#clock.t2,
+#clock.t3 {
+    background-color: #459987;
+}
+
+.modules-right {
+    background-color: #052749;
+    border: 0px solid #052749;
+    margin: 3px;
+}
+
+.modules-center {
+    background-color: #052749;
+    border: 0px solid #052749;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin: 3px;
+}
+
+#taskbar {
+    background-color: #052749;
+    border: 0px solid #052749;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+#taskbar button {
+    background-color: #457987;
+    border:0px;
+    color: #052749;
+    margin: 3px
+}
+
+#taskbar button:hover {
+    background: #456787;
+}
+
+#taskbar button.active {
+    background: #459987;
+}
+
+#workspaces button {
+    background-color: #457987;
+    border: 0px;
+    color: #052749;
+    margin: 3px;
+}
+
+#workspaces button.focused {
+    background-color: #459987;
+    border: 0px;
+    color: #052749;
+    margin: 3px;
+}
+
+.modules-left {
+    background-color: #052749;
+    border: 0px solid #052749;
+    margin: 3px;
+}
+#cpu {
+    background-color: #457987;
+    color: #052749;
+    border: 0px solid #456787;
+    margin: 3px;
+}
+
+#memory {
+    background-color: #457987;
+    color: #052749;
+    border: 0px solid #457787;
+    margin: 3px;
+}
+
+#disk {
+    background-color: #457987;
+    color: #052749;
+    border: 0px solid #458787;
+    margin: 3px;
+}
+
+#temperature {
+    background-color: #459987;
+    color: #052749;
+    border: 0px solid #459987;
+    margin: 3px;
+}
+
+#temperature.critical {
+    background-color: #95a787;
+}

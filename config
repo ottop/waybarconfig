@@ -1,0 +1,86 @@
+[
+  {
+    "clock#d1": {
+      "format": "{:%d}",
+      "interval": 1,
+      "tooltip": false
+    },
+    "clock#d2": {
+      "format": "{:%m}",
+      "interval": 1,
+      "tooltip": false
+    },
+    "clock#d3": {
+      "format": "{:%Y}",
+      "interval": 1,
+      "tooltip": false
+    },
+    "clock#t1": {
+      "format": "{:%H}",
+      "tooltip": false
+    },
+    "clock#t2": {
+      "format": "{:%M}",
+      "interval": 10,
+      "tooltip": false
+    },
+    "clock#t3": {
+      "format": "{:%S}",
+      "interval": 1,
+      "tooltip": false
+    },
+    "cpu": {
+      "format": "CPU: {usage}%",
+      "tooltip": false
+    },
+    "disk": {
+      "format": "Disk: {percentage_used}%",
+      "path": "/nix",
+      "tooltip": false
+    },
+    "height": 30,
+    "memory": {
+      "format": "RAM: {}%",
+      "tooltip": false
+    },
+    "modules-center": [
+      "wlr/taskbar"
+    ],
+    "modules-left": [
+      "cpu",
+      "temperature#cpu",
+      "temperature#gpu",
+      "memory",
+      "disk"
+    ],
+    "modules-right": [
+      "clock#d1",
+      "clock#d2",
+      "clock#d3",
+      "clock#t1",
+      "clock#t2",
+      "clock#t3"
+    ],
+    "position": "top",
+    "spacing": 0,
+    "temperature#cpu": {
+      "critical-threshold": 80,
+      "format": "CPU: {temperatureC}°C",
+      "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
+      "tooltip": false
+    },
+    "temperature#gpu": {
+      "critical-threshold": 80,
+      "format": "GPU: {temperatureC}°C",
+      "hwmon-path": "/sys/class/hwmon/hwmon4/temp1_input",
+      "tooltip": false
+    },
+    "wlr/taskbar": {
+      "format": "{icon} {app_id}",
+      "icon-size": 12,
+      "on-click": "activate",
+      "on-click-middle": "close",
+      "tooltip": false
+    }
+  }
+]
